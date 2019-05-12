@@ -1,0 +1,13 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<p>Введите параметры a и b:</p>
+
+<form action="/egcd" method="GET">
+  <input type="number" name="a" />
+  <input type="number" name="b" />
+  <input type="submit" value="Get!">
+</form>
+
+<p>{{egcd}}</p>
+{% endblock %}

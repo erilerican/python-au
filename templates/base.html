@@ -1,0 +1,37 @@
+﻿<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Мой сайт — ленивый, но такой розовый!</title>
+    <style>
+      html {
+        background: linear-gradient(#FFC0CB,#FD02B1);
+        font-size: 150%;
+        font-family: sans-serif;
+        color: black;
+        text-align: center;
+      }
+      p {
+        margin: 5%;
+      }
+      form {
+        margin: 5%;
+      }
+      a {
+        color: #FFC0CB;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Мой сайт — ленивый, но такой розовый!
+    </p>
+    <p>
+      Вот этот кусочек страницы просто есть. А дальше есть чуть-чуть смысла :)
+    </p>
+
+    {% block content %}
+    -- This should not be rendered --
+    {% endblock %}
+  </body>
+</html>

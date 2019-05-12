@@ -1,0 +1,13 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<p>{{check_param}}</p>
+
+<p>Используемый метод: {{method}}</p>
+
+<form action="/egcd" method="GET">
+  <input type="number" name="a_param" />
+  <input type="number" name="b_param" />
+  <input type="submit" value="Get!">
+</form>
+{% endblock %}
